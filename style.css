@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+}
+
+body {
+  background-color: rgb(240, 240, 243);
+  min-height: 100vh;
+}
+
+.calculator {
+  width: 350px;
+  height: 530px;
+  padding: 15px;
+  margin: auto;
+  margin-top: 100px;
+  border-radius: 5px;
+  background-color: rgb(240, 240, 243);
+  box-shadow: -10px -10px 30px rgb(255, 255, 255), 10px 10px 30px rgba(174, 174, 192, 0.251), inset -10px -10px 10px rgba(174, 174, 192, 0.145), inset 10px 10px 10px rgb(255, 255, 255);
+}
+
+.output {
+  height: 110px;
+  border-radius: 5px;
+  box-shadow: inset -10px -10px 10px rgba(255, 255, 255, 0.439), inset 10px 10px 10px rgba(174, 174, 192, 0.125);
+}
+
+.previous-operand {
+  text-align: right;
+  height: 20px;
+  margin: 0 20px;
+  padding-top: 10px;
+  font-size: 15px;
+  color: rgb(160, 160, 160);
+}
+
+.current-operand {
+  text-align: right;
+  height: 60px;
+  margin: 10px 20px;
+  padding-top: 10px;
+  font-size: 30px;
+}
+
+.keyboard {
+  height: 400px;
+}
+
+.operation,
+.number,
+.action {
+  width: 65px;
+  height: 65px;
+  margin: 7px;
+  float: left;
+  border-radius: 50%;
+  border-width: 0;
+  font-weight: light;
+  font-size: 25px;
+  cursor: pointer;
+  background-color: rgb(240, 240, 243);
+  box-shadow: -10px -10px 30px rgb(255, 255, 255), 10px 10px 30px rgba(174, 174, 192, 0.251), inset -10px -10px 10px rgba(174, 174, 192, 0.145), inset 10px 10px 10px rgb(255, 255, 255);
+}
+
+.operation {
+  color: rgb(127, 118, 255);
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.action {
+  color: rgb(109, 253, 109);
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.number:active,
+.operation:active,
+.action:active {
+  font-size: 13px;
+}
+
+.operation:focus,
+.number:focus,
+.action:focus {
+  outline: 0;
+}
+
+.wide-btn {
+  width: 142px;
+  border-radius: 40px;
+}
